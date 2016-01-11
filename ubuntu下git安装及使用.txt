@@ -1,5 +1,21 @@
+
 git 安装：
 
 　　sudo apt-get install git-core openssh-server openssh-client
 　　sudo apt-get install git-core git-gui git-doc
 　　sudo apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev git-core
+
+配置Git
+  ssh-keygen -t rsa -C "your_email@youremail.com"
+  ~/.ssh -> id_rsa.pub -> key
+
+  git config --global user.name "your name"  
+  git config --global user.email "your_email@youremail.com"  
+
+  git init 
+  git remote add origin git@github.com:yourName/yourRepo.git  
+
+提交、上传
+  git add README  
+  git commit -m "first commit" 
+  git push origin master  
